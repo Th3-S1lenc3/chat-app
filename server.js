@@ -1,11 +1,23 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 const http = require('http');
+const https = require('https');
 const socketio = require('socket.io');
 const BiMap = require('bidirectional-map');
 
 const app = express();
-const server = http.createServer(app);
+
+let server = http.createServer(app);
+
+if (process.env.MODE && process.env.MODE.toLowerCase() === 'https') {
+  console.log('Mode: https');
+  server = https.createServer({
+    key: fs.readFileSync('keys/server.key'),
+    cert: fs.readFileSync('keys/server.crt'),
+  }, app);
+}
+
 const io = socketio(server);
 
 app.use(express.static(path.join(__dirname, 'public')))

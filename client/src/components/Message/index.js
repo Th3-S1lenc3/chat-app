@@ -69,8 +69,6 @@ export default function Message() {
       }
     }));
 
-    console.log(recipients);
-
     const key = await importKey('public', publicKey.pem);
 
     const encryptedAESKeyObj = await rsaEncrypt(key, JSON.stringify(aesKeyObj));

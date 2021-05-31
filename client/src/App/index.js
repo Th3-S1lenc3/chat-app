@@ -12,29 +12,38 @@ import Message from '@components/Message';
 import './index.css';
 
 export default function App() {
-  return (
-    <ConnectionContextProvider>
-      <Container fluid className="App">
-        <Row>
-          <Room />
-        </Row>
-        <Row>
-          <Col md={7} className="col">
-            <Chat />
-          </Col>
-          <Col md={5} className="col">
-            <Row>
-              <Notification />
-            </Row>
-            <Row>
-              <Keys />
-            </Row>
-          </Col>
-        </Row>
-        <Row>
-          <Message />
-        </Row>
-      </Container>
-    </ConnectionContextProvider>
-  );
+  if (window.crypto.subtle) {
+    return (
+      <ConnectionContextProvider>
+        <Container fluid className="App">
+          <Row>
+            <Room />
+          </Row>
+          <Row>
+            <Col md={7} className="col">
+              <Chat />
+            </Col>
+            <Col md={5} className="col">
+              <Row>
+                <Notification />
+              </Row>
+              <Row>
+                <Keys />
+              </Row>
+            </Col>
+          </Row>
+          <Row>
+            <Message />
+          </Row>
+        </Container>
+      </ConnectionContextProvider>
+    );
+  }
+  else {
+    return (
+      <div className="App text-danger">
+        Error: Cannot Access `window.crypto.subtle`
+      </div>
+    )
+  }
 }

@@ -4,6 +4,8 @@
   "description": "Realtime ephemeral encrypted chat app",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
+    "genSelfSignedCert": "mkdir keys && openssl req -newkey rsa:4096 -x509 -sha256 -days 3650 -nodes -out keys/server.crt -keyout keys/server.key",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon server.js",
     "client": "npm start --prefix client"
