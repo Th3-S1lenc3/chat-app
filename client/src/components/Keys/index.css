@@ -1,0 +1,8 @@
+.keys {
+  text-align: left;
+  overflow-y: auto;
+}
+
+.key {
+  cursor: default;
+}

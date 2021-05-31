@@ -1,0 +1,14 @@
+.notification-list {
+  text-align: left;
+  overflow-y: auto;
+}
+
+.notification-timestamp {
+  width: 6rem !important;
+  max-width: 6rem !important;
+}
+
+.notification-text {
+  text-align: left;
+  padding-left: unset;
+}

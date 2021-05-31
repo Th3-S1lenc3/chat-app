@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+  height: 98vh;
+  padding-right: unset;
+  padding-left: unset;
+  margin: 0;
+}
+
+.col {
+  padding-right: unset;
+}
+
+.row {
+  margin-right: unset
+}
+
+.hidden {
+  display: none;
+}
+
+:root {
+  --row-height: 7vh;
+}
+
+.room {
+  width: 100%;
+  height: var(--row-height);
+  border-bottom: 1px solid #444;
+}
+
+.chat {
+  width: 100%;
+  height: calc(100vh - (var(--row-height) * 2));
+}
+
+.notification-list {
+  width: 100%;
+  height: calc((100vh - (var(--row-height) * 2)) / 2);
+}
+
+.keys {
+  width: 100%;
+  height: calc((100vh - (var(--row-height) * 2)) / 2);
+}
+
+.message {
+  width: 100%;
+  height: var(--row-height);
+}

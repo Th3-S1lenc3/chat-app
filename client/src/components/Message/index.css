@@ -1,0 +1,30 @@
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.messageContent {
+  width: max-content;
+}
+
+.message .input-group {
+  margin-left: 1rem;
+}
+
+.message .input-group-text {
+  border: unset;
+  background-color: unset;
+  padding-right: 0;
+}
+
+.message .form-control {
+  border: unset;
+  background-color: unset;
+  border-radius: unset;
+  width: fit-content !important;
+  max-width: 95vw !important;
+}
+
+.message .form-control:focus {
+  box-shadow: unset;
+}

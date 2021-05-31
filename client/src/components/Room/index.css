@@ -1,0 +1,28 @@
+.room {
+  display: flex;
+  align-items: center;
+}
+
+.roomName {
+  width: max-content;
+}
+
+.room .input-group {
+  margin-left: 1rem;
+}
+
+.room .input-group-text {
+  border: unset;
+  background-color: unset;
+  padding-right: 0;
+}
+
+.room .form-control {
+  border: unset;
+  background-color: unset;
+  border-radius: unset;
+}
+
+.room .form-control:focus {
+  box-shadow: unset;
+}

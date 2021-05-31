@@ -1,0 +1,11 @@
+.chat {
+  text-align: left;
+}
+
+.chat-message {
+  display: flex;
+}
+
+.chat-message-user {
+  padding-right: 4px;
+}
