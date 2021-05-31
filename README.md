@@ -1,4 +1,4 @@
-# Chat App {#chat-app}
+# Chat App
 
 Chat App is an end to end encrypted anonymous[^1] web chat application created with Node.js, React, Express & Socket.io.
 
