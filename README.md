@@ -1,6 +1,6 @@
 # Chat App
 
-Chat App is an end to end encrypted anonymous* web chat application created with Node.js, React, Express & Socket.io.
+Chat App is an end to end encrypted anonymous web chat application created with Node.js, React, Express & Socket.io.
 
 *( Jump to: [Technologies](#technologies) - [Installation & Usage](#installation--usage) - [Development](#development) - [License](#license) )*
 
@@ -40,7 +40,3 @@ W.I.P
 [Back to top](#chat-app)
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) for details
-
----
-
-* Anonymous so long as you don't give out personally identifiable information.
